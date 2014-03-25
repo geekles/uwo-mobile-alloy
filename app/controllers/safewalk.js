@@ -29,4 +29,9 @@ function requestSafeWalkClick(e) {
         });
 }
 
+function safeWalkClick(e) {
+    Titanium.Analytics.featureEvent('callSafeWalk');
+    Ti.Platform.openURL("telprompt:9204241212");
+}
+
 

@@ -10,10 +10,11 @@
             <TableViewRow><Label class="left">Friday</Label><Label class="right">6 a.m. - 11 p.m.</Label></TableViewRow>
             <TableViewRow><Label class="left">Saturday</Label><Label class="right">10 a.m. - 11 p.m.</Label></TableViewRow>
             <TableViewRow />
-            <TableViewRow onClick="membershipClick"><Label class="left">Tap for Membership Information</Label></TableViewRow>
-            <TableViewRow onClick="featuresClick"><Label class="left">Tap for Features</Label></TableViewRow>
-            <TableViewRow onClick="policiesClick"><Label class="left">Tap for Policies</Label></TableViewRow>
-            <TableViewRow onClick="parkingClick"><Label class="left">Tap for Parking</Label></TableViewRow>
+            <TableViewRow><Label class="left bold">Tap for Information:</Label></TableViewRow>
+            <TableViewRow onClick="membershipClick"><Label class="left">Membership Information</Label></TableViewRow>
+            <TableViewRow onClick="featuresClick"><Label class="left">Features</Label></TableViewRow>
+            <TableViewRow onClick="policiesClick"><Label class="left">Policies</Label></TableViewRow>
+            <TableViewRow onClick="parkingClick"><Label class="left">Parking</Label></TableViewRow>
         </TableView>
     </Window>
 </Alloy>

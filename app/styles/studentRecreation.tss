@@ -1,0 +1,6 @@
+".bold": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 20
+	}
+}

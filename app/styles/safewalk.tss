@@ -7,18 +7,26 @@
 },
 "TextField": {
     width: "85%",
+    height: 30,
     left: 10,
     backgroundColor: "#fff"
 },
-".bold": {
+"bold": {
     font: {
+        fontWeight: "bold",
+        fontSize: '15dp'
+    }
+},
+"header": {
+    color: "#333",
+    font: {
+        fontSize: 25,
         fontWeight: "bold"
     }
 },
-".header": {
-    color: "#333",
-    font: {
-        fontSize: 16,
-        fontWeight: "bold"
-    }
+"safewalkButton": {
+	top: 15,
+	font: {
+		fontSize: 20
+	}
 }
