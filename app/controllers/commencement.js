@@ -17,7 +17,10 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementMapClick(e) {
         Titanium.Analytics.featureEvent('commencementMap');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('commencementMap').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/documents/ParkingMap1Up.pdf",
+            title: "Commencement Map"
+        }).getView());
     }
 
     function commencementWebsiteClick(e) {
@@ -47,32 +50,50 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function commencementFacebookAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementFacebook');
-        Ti.Platform.openURL("http://m.facebook.com/UWOshkoshCommencement");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://m.facebook.com/UWOshkoshCommencement",
+            title: "UWO Commencement"
+        }).getView());
     }
 
     function commencementTwitterAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementTwitter');
-        Ti.Platform.openURL("https://twitter.com/uwocommencement");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "https://twitter.com/uwocommencement",
+            title: "@uwocommencement"
+        }).getView());
     }
 
     function commencementMapAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementMap');
-        Alloy.createController('commencementMap').getView().open();
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/documents/ParkingMap1Up.pdf",
+            title: "Commencement Map"
+        }).getView());
     }
 
     function commencementWebsiteAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementWebsite');
-        Ti.Platform.openURL("http://www.uwosh.edu/commencement/");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/",
+            title: "UWO Commencement"
+        }).getView());
     }
 
     function commencementProgramAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementProgram');
-        Ti.Platform.openURL("http://www.uwosh.edu/commencement/documents/program.pdf");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/documents/program.pdf",
+            title: "Commencement Program"
+        }).getView());
     }
 
     function commencementChecklistAndroidClick(e) {
         Titanium.Analytics.featureEvent('commencementChecklist');
-        Ti.Platform.openURL("http://www.uwosh.edu/commencement/mid-year/students/commencement-checklist");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/mid-year/students/commencement-checklist",
+            title: "Commencement Checklist"
+        }).getView());
     }
 
 }

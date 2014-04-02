@@ -1,7 +1,10 @@
 if (OS_IOS || OS_MOBILEWEB) {
     function availableComputersClick(e) {
         Titanium.Analytics.featureEvent('availableComputers');
-        Ti.Platform.openURL("http://www.uwosh.edu/library/m/computer_availability_page.php");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+        	url:  "http://www.uwosh.edu/library/m/computer_availability_page.php",
+        	title: "Computers"
+        }).getView());
     }
 
     function polkHoursClick(e) {
@@ -11,7 +14,10 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function findBooksVideosClick(e) {
         Titanium.Analytics.featureEvent('findBooksVideos');
-        Ti.Platform.openURL("http://oshlib.wisconsin.edu/vwebv/searchBasic?sk=mobile");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+        	url: "http://oshlib.wisconsin.edu/vwebv/searchBasic?sk=mobile",
+        	title: "Books & Videos"
+        }).getView());
     }
 
     function groupFinderClick(e) {
@@ -22,7 +28,10 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function availableComputersAndroidClick(e) {
         Titanium.Analytics.featureEvent('availableComputers');
-        Ti.Platform.openURL("http://www.uwosh.edu/library/m/computer_availability_page.php");
+        Alloy.Globals.navwindow.openWindow(Alloy.createConroller('webViews', {
+        	url:  "http://www.uwosh.edu/library/m/computer_availability_page.php",
+        	title: "Computers"
+        }).getView());
     }
 
     function polkHoursAndroidClick(e) {
@@ -32,7 +41,10 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function findBooksVideosAndroidClick(e) {
         Titanium.Analytics.featureEvent('findBooksVideos');
-        Ti.Platform.openURL("http://oshlib.wisconsin.edu/vwebv/searchBasic?sk=mobile");
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+        	url: "http://oshlib.wisconsin.edu/vwebv/searchBasic?sk=mobile",
+        	title: "Books & Videos"
+        }).getView());
     }
 
     function groupFinderAndroidClick(e) {

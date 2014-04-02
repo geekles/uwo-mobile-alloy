@@ -1,6 +1,9 @@
 function titanAlertClick(e) {
     Titanium.Analytics.featureEvent('titanAlertClick');
-    Ti.Platform.openURL("http://www.uwosh.edu/home/titanalert/");
+    Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+    	url: "http://www.uwosh.edu/home/titanalert/",
+    	title: "Titan Alert"
+    }).getView());
 }
 
 function campusPoliceClick(e) {
