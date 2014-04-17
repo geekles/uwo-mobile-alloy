@@ -17,7 +17,10 @@ if (OS_IOS || OS_MOBILEWEB) {
 
     function commencementMapClick(e) {
         Titanium.Analytics.featureEvent('commencementMap');
-        Alloy.Globals.navwindow.openWindow(Alloy.createController('commencementMap').getView());
+        Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+            url: "http://www.uwosh.edu/commencement/documents/ParkingMap1Up.pdf",
+            title: "Commencement Map"
+        }).getView());
     }
 
     function commencementWebsiteClick(e) {

@@ -33,32 +33,32 @@ if (OS_IOS || OS_MOBILEWEB) {
 } else {
     function newsEventsAndroidClick(e) {
         Titanium.Analytics.featureEvent('newsEvents');
-        Alloy.createController('newsEvents').getView().open();
+        Alloy.createController('newsEvents').getView().open({modal : true});
     }
 
     function peoplePlacesAndroidClick(e) {
         Titanium.Analytics.featureEvent('peoplePlaces');
-        Alloy.createController('peoplePlaces').getView().open();
+        Alloy.createController('peoplePlaces').getView().open({modal : true});
     }
 
     function quickLinksAndroidClick(e) {
         Titanium.Analytics.featureEvent('quickLinks');
-        Alloy.createController('quickLinks').getView().open();
+        Alloy.createController('quickLinks').getView().open({modal : true});
     }
 
     function stayConnectedAndroidClick(e) {
         Titanium.Analytics.featureEvent('stayConnected');
-        Alloy.createController('stayConnected').getView().open();
+        Alloy.createController('stayConnected').getView().open({modal : true});
     }
 
     function campusServicesAndroidClick(e) {
         Titanium.Analytics.featureEvent('campusServices');
-        Alloy.createController('campusServices').getView().open();
+        Alloy.createController('campusServices').getView().open({modal : true});
     }
 
     function emergencyAndroidClick(e) {
         Titanium.Analytics.featureEvent('emergency');
-        Alloy.createController('emergency').getView().open();
+        Alloy.createController('emergency').getView().open({modal : true});
     }
 }
 
