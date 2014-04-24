@@ -36,14 +36,14 @@ if (OS_IOS || OS_MOBILEWEB) {
     function campusEventsAndroidClick(e) {
         Titanium.Analytics.featureEvent('newsFeedCampusEvents');
         Alloy.createController('newsFeed', {
-            url: "http://www.uwosh.edu/home/events/events/RSS"
+            url: "http://www.uwosh.edu/today/events/feed/"
         }).getView().open({modal : true});
     }
 
     function advanceTitanAndroidClick(e) {
         Titanium.Analytics.featureEvent('newsFeedAdvanceTitan');
         Alloy.createController('newsFeed', {
-            url: "http://www.advancetitan.com/se/the-advance-titan-rss-1.301985"
+            url: "http://www.advancetitan.com/search/?q=&t=article&l=10&d=&d1=&d2=&s=start_time&sd=desc&c[]=news,news/*&f=rss"
         }).getView().open({modal : true});
     }
 

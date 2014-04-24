@@ -4,7 +4,7 @@
 },
 "Label": {
     height: "auto",
-    top: 5
+    top: 20
 },
 "#restaurant": {
     backgroundColor: "#999",

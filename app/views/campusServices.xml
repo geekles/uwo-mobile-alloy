@@ -28,7 +28,7 @@
                 <Label>Polk Library</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/peopleplaces.png" onClick="studentRecreationAndroidClick">
-                <Label>Student Recreation \u0026 Wellness Center</Label>
+                <Label>Recreation \u0026 Wellness Center</Label>
             </TableViewRow>
             <TableViewRow class="imageRow" leftImage="/images/icons/dining.png" onClick="diningLocationsAndroidClick">
                 <Label>Today's Dining Menus</Label>

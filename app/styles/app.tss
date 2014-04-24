@@ -7,6 +7,9 @@
 "Window[platform=ios]": {
     statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
 },
+"Window[platform=android]": {
+	navBarHidden: true
+},
 "TableView": {
     backgroundColor: "#F7F7F7",
     separatorColor: "transparent"

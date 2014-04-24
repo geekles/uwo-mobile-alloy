@@ -149,24 +149,14 @@ if (screenWidth > screenHeight) {
 }
 // Set initial orientation
 if (currentOrientation == "portrait") {
-    if (OS_IOS || OS_MOBILEWEB) {
-        $.index.backgroundImage = options.mainBackgroundImage;
-    }
-    if (OS_ANDROID) {
-        $.index.backgroundImage = options.mainBackgroundImage;
-    }
+	$.index.backgroundImage = options.mainBackgroundImage;
     $.dashboard.height = options.dashboardHeight;
     $.dashboard.width = options.dashboardWidth;
     $.dashboard.bottom = options.dashboardBottom;
     $.dashboard.left = (screenWidth - options.dashboardWidth) / 2;//'auto';
 }
 if (currentOrientation == "landscape") {
-    if (OS_IOS || OS_MOBILEWEB) {
-        $.index.backgroundImage = options.mainBackgroundImageLandscape;
-    }
-    if (OS_ANDROID) {
-        $.index.backgroundImage = options.mainBackgroundImageLandscape;
-    }
+	$.index.backgroundImage = options.mainBackgroundImageLandscape;
     $.dashboard.height = options.dashboardHeightLandscape;
     $.dashboard.width = options.dashboardWidthLandscape;
     $.dashboard.bottom = options.dashboardBottomLandscape;
@@ -176,18 +166,12 @@ if (currentOrientation == "landscape") {
 Ti.Gesture.addEventListener('orientationchange', function (ev) {
     if (Ti.Gesture.orientation !== Titanium.UI.FACE_UP && Ti.Gesture.orientation !== Titanium.UI.FACE_DOWN) {
         if (Alloy.Globals.isLandscape(ev.orientation)) {
-            if (OS_IOS || OS_MOBILEWEB) {
-                $.index.backgroundImage = options.mainBackgroundImageLandscape;
-            }
             $.index.backgroundImage = options.mainBackgroundImageLandscape;
             $.dashboard.height = options.dashboardHeightLandscape;
             $.dashboard.width = options.dashboardWidthLandscape;
             $.dashboard.bottom = options.dashboardBottomLandscape;
             $.dashboard.left = (Alloy.Globals.isLargeScreen()) ? 40 : 10;
         } else {
-            if (OS_IOS || OS_MOBILEWEB) {
-                $.index.backgroundImage = options.mainBackgroundImage;
-            }
             $.index.backgroundImage = options.mainBackgroundImage;
             $.dashboard.height = options.dashboardHeight;
             $.dashboard.width = options.dashboardWidth;

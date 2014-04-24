@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="Emergency">
+    <Window title="Emergency" platform="ios">
         <TableView>
             <TableViewRow onClick="titanAlertClick" class="red"><Label class="header left">Sign up for TitanAlert</Label></TableViewRow>
             <TableViewRow class="orange"><Label class="header left">Reporting Emergencies</Label></TableViewRow>
@@ -12,6 +12,22 @@
             <TableViewRow onClick="facilitiesClick"><Label class="left">Facilities:</Label><Label class="right">(920) 424-3466</Label></TableViewRow>
             <TableViewRow onClick="safeWalkClick"><Label class="left">Safe Walk:</Label><Label class="right">(920) 424-1212</Label></TableViewRow>
             <TableViewRow onClick="crisisHotlineClick"><Label class="left">Crisis Hotline:</Label><Label class="right">(920) 233-7707</Label></TableViewRow>
+        </TableView>
+    </Window>
+    
+    <Window title="Emergency" platform="android">
+    	<TableView>
+            <TableViewRow onClick="titanAlertClick" class="red"><Label class="header left">Sign up for TitanAlert</Label></TableViewRow>
+            <TableViewRow class="orange"><Label class="header left">Reporting Emergencies</Label></TableViewRow>
+            <TableViewRow class="gray"><Label class="header left">When to Call 911</Label></TableViewRow>
+            <TableViewRow><Label class="left">Call 911 in all emergencies.</Label></TableViewRow>
+            <TableViewRow><Label class="left">Note: Dial 9-911 from a University phone.</Label></TableViewRow>
+            <TableViewRow class="orange"><Label class="header left">Non-Emergency Phone #'s'</Label></TableViewRow>
+            <TableViewRow onClick="campusPoliceAndroidClick"><Label class="left">Campus Police:</Label><Label class="right">(920) 424-1212</Label></TableViewRow>
+            <TableViewRow onClick="riskManagementAndroidClick"><Label class="left">Risk Management:</Label><Label class="right">(920) 424-1191</Label></TableViewRow>
+            <TableViewRow onClick="facilitiesAndroidClick"><Label class="left">Facilities:</Label><Label class="right">(920) 424-3466</Label></TableViewRow>
+            <TableViewRow onClick="safeWalkAndroidClick"><Label class="left">Safe Walk:</Label><Label class="right">(920) 424-1212</Label></TableViewRow>
+            <TableViewRow onClick="crisisHotlineAndroidClick"><Label class="left">Crisis Hotline:</Label><Label class="right">(920) 233-7707</Label></TableViewRow>
         </TableView>
     </Window>
 </Alloy>

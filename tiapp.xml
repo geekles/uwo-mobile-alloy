@@ -41,6 +41,7 @@
         <manifest android:installLocation="preferExternal"
             android:versionCode="19" android:versionName="2.2.0">
             <supports-screens android:anyDensity="false"/>
+            <uses-permission android:name="android.permission.CALL_PHONE" />
         </manifest>
     </android>
     <mobileweb>
