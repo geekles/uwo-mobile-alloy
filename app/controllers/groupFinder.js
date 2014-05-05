@@ -11,7 +11,8 @@ function groupSection(section, data) {
             font:{fontSize:18},
             color: '#414444',
             left:10,
-            textAlign: 'left'
+            textAlign: 'left',
+            top:10
         });
         locationRow.add(locationLabel);
         var openTime = datetime.cleanTime(section[i].start);
@@ -25,6 +26,7 @@ function groupSection(section, data) {
             },
             color: '#414444',
             left:10,
+            top:10,
             textAlign: 'left'
         });
         timeRow.add(timeLabel);
@@ -40,19 +42,19 @@ function groupFinder(groups, entry){
     Schedule a group - http://www.uwosh.edu/library/groupfinder/create */
     var data = [];
     if(groups.today.length >= 1) {
-        var todayHeader = new header.HeaderRow("Today's Groups");
+        var todayHeader = new header.HeaderRow("Today's Groups", '#D79A27');
         data.push(todayHeader);
         groupSection(groups.today,data);
     }
 
     if(groups.tomorrow.length >= 1) {
-        var tomorrowHeader = new header.HeaderRow("Tomorrow's Groups");
+        var tomorrowHeader = new header.HeaderRow("Tomorrow's Groups", '#D79A27');
         data.push(tomorrowHeader);
         groupSection(groups.tomorrow, data);
     }
 
     if(groups.upcoming.length >= 1) {
-        var upcomingHeader = new header.HeaderRow("Upcoming Groups");
+        var upcomingHeader = new header.HeaderRow("Upcoming Groups", '#D79A27');
         data.push(upcomingHeader);
         var lastDate = '';
         for(var i=0; i<groups.upcoming.length; i++) {
@@ -70,7 +72,8 @@ function groupFinder(groups, entry){
                 font:{fontSize:18},
                 color: '#414444',
                 left:10,
-                textAlign: 'left'
+                textAlign: 'left',
+                top:10
             });
             locationRow.add(locationLabel);
             var openTime = datetime.cleanTime(groups.upcoming[i].start);
@@ -82,7 +85,8 @@ function groupFinder(groups, entry){
                 font:{fontSize:18},
                 color: '#414444',
                 left:10,
-                textAlign: 'left'
+                textAlign: 'left',
+                top:10
             });
             timeRow.add(timeLabel);
 

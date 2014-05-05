@@ -4,9 +4,15 @@
 },
 "Label": {
     height: "auto",
-    top: 20
+    top: 20,
+    font: {
+    	fontWeight: 'none'
+    }
 },
 "#restaurant": {
-    backgroundColor: "#999",
-    color: "#FFF"
+    color: "#D79A27",
+    font: {
+    	fontSize: '20dp',
+    	fontWeight: 'bold'
+    }
 }

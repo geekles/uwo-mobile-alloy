@@ -17,7 +17,7 @@
     
     <Window title="Emergency" platform="android">
     	<TableView>
-            <TableViewRow onClick="titanAlertClick" class="red"><Label class="header left">Sign up for TitanAlert</Label></TableViewRow>
+            <TableViewRow onClick="titanAlertAndroidClick" class="red"><Label class="header left">Sign up for TitanAlert</Label></TableViewRow>
             <TableViewRow class="orange"><Label class="header left">Reporting Emergencies</Label></TableViewRow>
             <TableViewRow class="gray"><Label class="header left">When to Call 911</Label></TableViewRow>
             <TableViewRow><Label class="left">Call 911 in all emergencies.</Label></TableViewRow>

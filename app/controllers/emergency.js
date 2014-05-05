@@ -36,7 +36,7 @@ if (OS_IOS || OS_MOBILEWEB) {
 	
 } else {
 	
-	function titanAlertClick(e) {
+	function titanAlertAndroidClick(e) {
     	Titanium.Analytics.featureEvent('titanAlertClick');
     	Ti.Platform.openURL("http://www.uwosh.edu/home/titanalert/");
 	}

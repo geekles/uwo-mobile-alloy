@@ -69,7 +69,7 @@
                 <Label class="bold subheader">Community Service Officer Safewalk Program</Label>
                 <Label>The safety and security of the UW Oshkosh community is our No. 1 priority. To request a Safewalk, call (920) 424-1212, or complete this form.</Label>
                 <Label>You will receive an email verifying that we have received your request, and we will send you a follow-up email letting you know our projected time for getting to your location.</Label>
-                <Label onClick="safeWalkClick" color="blue">Click here to call</Label>
+                <Label onClick="safeWalkAndroidClick" color="blue">Click here to call</Label>
             	<Label>-or-</Label>
             	<Label>Fill out this form:</Label>
                 <Label class="bold" color="red">**All fields are required**</Label>

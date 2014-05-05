@@ -29,9 +29,20 @@ function requestSafeWalkClick(e) {
         });
 }
 
-function safeWalkClick(e) {
-    Titanium.Analytics.featureEvent('callSafeWalk');
-    Ti.Platform.openURL("telprompt:9204241212");
+if (OS_IOS || OS_MOBILEWEB) {
+	function safeWalkClick(e) {
+    	Titanium.Analytics.featureEvent('callSafeWalk');
+    	Ti.Platform.openURL("telprompt:9204241212");
+	}
+} else {
+	function safeWalkAndroidClick(e) {
+		Titanium.Analytics.featureEvent('callSafeWalk');
+		var intent = Ti.Android.createIntent({
+			action: Ti.Android.ACTION_DIAL,
+			data: 'tel:9204241212'
+		});
+		Ti.Android.currentActivity.startActivity(intent);
+	}
 }
 
 
