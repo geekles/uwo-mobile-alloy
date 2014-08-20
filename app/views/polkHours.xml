@@ -14,25 +14,25 @@
                 <Label id="day1" class="headerText" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="day1Hours">
+                <Label id="day1Hours" />
             </TableViewRow>
             <TableViewRow class="header">
                 <Label id="day2" class="headerText" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="day2Hours">
+                <Label id="day2Hours" />
             </TableViewRow>
             <TableViewRow class="header">
                 <Label id="day3" class="headerText" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="day3Hours">
+                <Label id="day3Hours" />
             </TableViewRow>
             <TableViewRow class="header">
                 <Label id="day4" class="headerText" />
             </TableViewRow>
             <TableViewRow>
-                <Label id="day4Hours">
+                <Label id="day4Hours" />
             </TableViewRow>
         </TableView>
     </Window>
