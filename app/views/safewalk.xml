@@ -74,19 +74,19 @@
             	<Label>Fill out this form:</Label>
                 <Label class="bold" color="red">**All fields are required**</Label>
                 <Label class="bold">First Name:</Label>
-                <TextField id="firstName" autocorrect="false"></TextField>
+                <TextField id="firstName" autocorrect="false" />
                 <Label class="bold">Last Name:</Label>
-                <TextField id="lastName" autocorrect="false"></TextField>
+                <TextField id="lastName" autocorrect="false" />
                 <Label class="bold">E-mail:</Label>
-                <TextField id="emailAddress" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_EMAIL"></TextField>
+                <TextField id="emailAddress" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_EMAIL" />
                 <Label class="bold">Starting Location:</Label>
-                <TextField id="startingLocation" autocorrect="false" hintText="Please list the address or intersection you are currently located at."></TextField>
+                <TextField id="startingLocation" autocorrect="false" hintText="Please list the address or intersection you are currently located at." />
                 <Label class="bold">Ending Location:</Label>
-                <TextField id="endingLocation" autocorrect="false" hintText="What address or intersection would you like a CSO to provide a Safewalk to?"></TextField>
+                <TextField id="endingLocation" autocorrect="false" hintText="What address or intersection would you like a CSO to provide a Safewalk to?" />
                 <Label class="bold">Callback number:</Label>
-                <TextField id="phoneNumber" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_PHONE_PAD"></TextField>
+                <TextField id="phoneNumber" autocorrect="false" keyboardType="Titanium.UI.KEYBOARD_PHONE_PAD" />
                 <Label class="bold">How to identify you:</Label>
-                <TextField id="identifier" autocorrect="false" hintText="To help us identify you upon arrival, please provide a brief description of your clothing."></TextField>
+                <TextField id="identifier" autocorrect="false" hintText="To help us identify you upon arrival, please provide a brief description of your clothing." />
                 <Button class="safewalkButton" onClick="requestSafeWalkClick" accessibilityHint="Clicking this will open an email dialog to send a Safewalk request">Request Safewalk</Button>
             </View>
         </ScrollView>

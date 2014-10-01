@@ -9,7 +9,8 @@
     width: "85%",
     height: 30,
     left: 10,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    color: "#444"
 },
 "bold": {
     font: {
