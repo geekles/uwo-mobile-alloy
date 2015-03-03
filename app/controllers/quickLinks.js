@@ -29,3 +29,11 @@ function mobileSetupClick(e) {
     	title: "Mobile Setup"
     }).getView());
 }
+
+function titanTransitClick(e) {
+    Titanium.Analytics.featureEvent('titanTransitQuickLinks');
+    Alloy.Globals.navwindow.openWindow(Alloy.createController('webViews', {
+    	url: "http://www.uworide.com/default.aspx",
+    	title: "Titan Transit"
+    }).getView());
+}

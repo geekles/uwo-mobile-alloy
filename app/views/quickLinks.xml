@@ -13,6 +13,9 @@
             <TableViewRow class="imageRow" leftImage="/images/icons/titanmobile.png" onClick="mobileSetupClick">
                 <Label>Titan Apps (email) mobile setup</Label>
             </TableViewRow>
+            <TableViewRow class="imageRow" leftImage="/images/icons/bus.png" onClick="titanTransitClick">
+                <Label>Titan Transit and Parking Shuttle</Label>
+            </TableViewRow>
         </TableView>
     </Window>
 </Alloy>
