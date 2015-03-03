@@ -13,7 +13,7 @@
             </TableViewRow>
             <TableViewRow></TableViewRow>
             <TableViewRow>
-                <Label>If you do not receive a phone call or email within 10 minutes of submitting this form, please contact us at (920) 424-1212.</Label>
+                <Label>If you do not receive a phone call or email within 5 minutes of submitting this form, please contact us at (920) 424-1212.</Label>
             </TableViewRow>
         </TableView>
     </Window>
@@ -33,7 +33,7 @@
             </TableViewRow>
             <TableViewRow></TableViewRow>
             <TableViewRow>
-                <Label>If you do not receive a phone call or email within 10 minutes of submitting this form, please contact us at (920) 424-1212.</Label>
+                <Label>If you do not receive a phone call or email within 5 minutes of submitting this form, please contact us at (920) 424-1212.</Label>
             </TableViewRow>
         </TableView>
     </Window>
